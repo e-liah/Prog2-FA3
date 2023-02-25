@@ -29,7 +29,7 @@ void displayCopy() {
   cin.get(name2, 50);
   cin.ignore();
 
-  strcpy(name1, name2);
+  strcpy(name1, name2); //the first parameter is where the copied string will be stored; the second parameter is the string that will be copied
 
   cout << "New string value for str1: " << name1 << endl;
 }
