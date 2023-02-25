@@ -32,7 +32,7 @@ void displayPalindrome() {
   }
 
   if (strcmp(name1, store)) {
-      mark = 1;
+      mark = 1; //if name1 is greater than store; meaning there is a difference
     }
 
     if (mark == 1) {
