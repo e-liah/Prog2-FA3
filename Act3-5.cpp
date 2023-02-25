@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string.h>
+#include <cctype>
 
 using namespace std;
 
@@ -20,6 +21,10 @@ void displayUppercase() {
   cout << "Enter some string: "; 
   cin.get(name1, 100);
   cin.ignore();
+
+  for (int n = 0; n < strlen(name1); n++) {
+    name1[n] = tolower(name1[n]);
+  }
 
   for (int n = 0; n < strlen(name1); n++) {
     if (n == 0) {
